@@ -11,7 +11,7 @@ const Home = () => {
     <Experiencie></Experiencie>
     <Proyects></Proyects>
     <Skills></Skills>
-    <Contact></Contact>
+ <Contact></Contact>
     <Footer></Footer>
     
    

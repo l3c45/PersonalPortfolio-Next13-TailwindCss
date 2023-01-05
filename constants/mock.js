@@ -37,7 +37,7 @@ export const exp = [
 
 export const proyects =[
   {
-    imgUrl:"./tvgl.png",
+    imgUrl:"/tvgl.png",
     title:"The Game Library",
     subtitle:"Pagina web que muestra informacion  detallada de todos los videjuegos existentes hasta la fecha ",
   git:"./",
@@ -45,7 +45,7 @@ export const proyects =[
   tech:["Next13","React-Query","TailwindCSS"]
   },
   {
-    imgUrl:"./monshine.png",
+    imgUrl:"/monshine.png",
     title:"Monshine App",
     subtitle:"Aplicacion Movil para gestion de gastos ,ventas y stock .Creacion de usuarios, generacion de facturas y reportes",
   git:"./",
@@ -53,7 +53,7 @@ export const proyects =[
   tech:["React-Native","Firebase","Auth-Login", "Expo"]
   },
   {
-    imgUrl:"./ardruino.jpg",
+    imgUrl:"/ardruino.jpg",
     title:"Analizador de calidad de energia",
     subtitle:"Dispositivo que mide los niveles de potencia y tension del suministro electrico del hogas . Panel de administraciony envio remoto de datos",
   git:"./",
