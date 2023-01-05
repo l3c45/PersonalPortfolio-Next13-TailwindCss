@@ -1,47 +1,44 @@
 "use client";
 import { motion } from "framer-motion";
+import { techsObj } from "../constants/Icons";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import { TypingText } from "./motion/CustomTexts";
 import TechCards from "./motion/TechCards";
 
-const tech=["SiJavascript","SiTypescript","SiReact","SiTailwindcss","SiArduino","SiAutodesk","SiCss3","SiExpress","SiExpo","SiFirebase","SiMaterialui","SiNodedotjs","SiMongodb","TbBrandNextjs","TbBrandReactNative"]
-
-
 const Skills = () => {
   return (
-    <section
-      id="skills"
-      className="min-h-screen flex flex-col justify-center items-center "
+    <motion.div
+      variants={staggerContainer()}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className={` flex flex-col`}
     >
-      <motion.div
-        variants={staggerContainer()}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
-        className={` mx-auto flex flex-col`}
+      <section
+        id="skills"
+        className="min-h-screen flex flex-col justify-evenly items-center "
       >
         <TypingText
           title={"Tecnologias"}
-          textStyles="text-5xl py-2 text-center"
+          textStyles="text-5xl  text-center"
         />
 
-        <div className="  mt-10 flex flex-wrap gap-8 justify-center w-[600px]">
-{
-  tech.map((_,i)=>{
-    return (
-      <TechCards
-      key={i}
-      index={i}
-      />
-    )
-  }
- 
-)
-}
-
+        <div className="  flex flex-wrap gap-10 justify-center mx-[200px]">
+          {Object.keys(techsObj).map((_, i) => {
+            const icon = techsObj[i];
+            return icon ? (
+              <TechCards
+                index={i}
+                name={icon.name}
+                icon={icon.icon}
+                color={icon.color}
+                key={i}
+              />
+            ) : null;
+          })}
         </div>
-      </motion.div>
-    </section>
+      </section>
+    </motion.div>
   );
 };
 
