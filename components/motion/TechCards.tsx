@@ -43,7 +43,7 @@ const TechCards = ({index}:number) => {
       className="flex md:flex-row flex-col gap-4"
     >
       
-      {()=>`<${tech[index]}/>` }
+     
    
     </motion.div>
   );
