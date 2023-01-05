@@ -28,7 +28,7 @@ const Experiencie = () => {
         />
         <div className="p-4 w-full justify-center flex lg:flex-row flex-col  gap-12">
           {exp.map((item, index,arr) => {
-            console.log(item,index,arr)
+      
             return (
             <ExploreCard
               key={index}

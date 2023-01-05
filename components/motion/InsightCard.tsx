@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { BsGithub ,BsBoxArrowUpRight,BsDiamondFill} from "react-icons/bs";
 import { fadeIn } from '../../utils/motion';
-
+import { techsObj } from '../../constants/Icons';
 interface Props {
   imgUrl:string,
   title:string,
@@ -13,21 +13,21 @@ interface Props {
   index:number,
   git:string,
   demo:string,
-  tech:string[],
+  tech:number[],
 
 }
 
 const InsightCard = ({ imgUrl, title, subtitle, index,demo,git,tech }:Props) => (
   <motion.div
     variants={fadeIn('up', 'spring', index * 0.5, 1)}
-    className="flex md:flex-row flex-col gap-4"
+    className="flex flex-row items-center gap-4 mx-[100px] my-[10px]"
   >
     <Image
       src={imgUrl}
       width={500}
       height={500}
       alt="image web page"
-      className="w-126 h-64 rounded-[32px] object-cover"
+      className="w-126 h-64 rounded-[32px] object-contain"
     />
     <div className="w-full flex justify-between items-center">
       <div className="flex-1 md:ml-[62px] flex flex-col max-w-[650px]">
@@ -38,11 +38,17 @@ const InsightCard = ({ imgUrl, title, subtitle, index,demo,git,tech }:Props) => 
           {subtitle}
         </p>
         <ul className='py-6 flex gap-6' >
-          {tech.map((item,i)=>
-            <li className='flex items-center text-zinc-300 text-xl' key={i}>
-             <BsDiamondFill className='mx-2'></BsDiamondFill> {item}
-            </li>
-          )}
+          {tech.map((item,i)=>{
+          const icon=techsObj[item]
+
+            return (
+            <li className='flex items-center gap-4 text-zinc-300 text-xl' key={i}>
+              {icon.icon({color:icon.color,size:50})}
+             <p>{icon.name}</p>
+    
+            </li>)
+          })
+        }
 
         </ul>
       </div>

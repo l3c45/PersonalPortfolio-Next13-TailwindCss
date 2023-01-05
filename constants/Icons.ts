@@ -14,6 +14,8 @@ import {
 } from "react-icons/si";
 import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
 import { IconType } from "react-icons";
+import { Router } from "next/router";
+import { MdQueryBuilder } from "react-icons/md";
 
 interface TechsObj {
   [index: number]: {
@@ -30,7 +32,7 @@ export const techsObj: TechsObj = {
  3: { icon: TbBrandNextjs, color: "#000", name:"NextJS" },
   4: { icon: TbBrandReactNative, color: "#61DBFB",name:"React Native" },
   5: { icon: SiExpo, color: "#808080",name:"Expo" },
-  6: { icon: SiNodedotjs, color: "#3c873a",name:"Expo" },
+  6: { icon: SiNodedotjs, color: "#3c873a",name:"NodeJs" },
   7: { icon: SiExpress, color: "#68A063",name:"Express" },
   8: { icon: SiFirebase, color: "#FFCB2B",name:"Firebase" },
   9: { icon: SiMongodb, color: "#589636",name:"MongoDB" },
@@ -41,4 +43,17 @@ export const techsObj: TechsObj = {
 
 
 };
+
+
+// Router router,query,api,localStorage,scrum,trello
+// //
+// //
+// /
+// /
+// /
+// /
+// /
+// ///
+
+
 

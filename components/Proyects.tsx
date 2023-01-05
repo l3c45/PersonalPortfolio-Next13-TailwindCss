@@ -9,6 +9,7 @@ const Proyects = () => {
   return (
     <section
       id="proyects"
+      className="mb-[100px]"
       
     >
       <motion.div
@@ -19,14 +20,14 @@ const Proyects = () => {
         className="min-h-screen flex flex-col  items-center "
       >
         <TitleText title={"Proyectos"} textStyles="text-center" />
-        <div className="mt-[50px] flex flex-col gap-[30px]">
+        <div className="mt-[50px] flex flex-col gap-8]">
           {proyects.map((item, index) => (
             <InsightCard key={`insight-${index}`} {...item} index={index + 1} />
           ))}
         </div>
         <motion.div
-          variants={fadeIn("up", "spring", 2, 1)}
-          className="mt-12"
+          variants={fadeIn("up", "spring", 5, 1)}
+          className=" my-[100px]"
         >
           <button
             type="button"
