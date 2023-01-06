@@ -11,9 +11,9 @@ const Experiencie = () => {
   const [active, setActive] = useState<number>(9)
 
   return (
-<section id="experiencie" className="min-h-screen flex flex-col  items-center " >
-
-
+<section id="experiencie" className="min-h-screen flex flex-col justify-center  items-center " >
+<h2 className='text-6xl'>WIP...</h2>
+{/* 
  <motion.div
         variants={staggerContainer()}
         initial="hidden"
@@ -42,7 +42,7 @@ const Experiencie = () => {
           )})}
         </div>
       </motion.div>
- 
+  */}
 </section>
   )
 }

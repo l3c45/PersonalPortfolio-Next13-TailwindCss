@@ -27,3 +27,26 @@
     background: #65c4fa;
     filter: blur(150px);
   }
+
+  .gradient-04 {
+    
+    width: 300px;
+    height: 50vh;
+    left: 10%;
+    top: 30%;
+  
+    background: rgba(45, 72, 152, 0.75);
+    filter: blur(200px);
+    
+  }
+
+  
+.feedback-gradient {
+ 
+  width: 200px;
+  height: 316px;
+ left:77%;
+
+  background: #8d39a3;
+  filter: blur(175px);
+}

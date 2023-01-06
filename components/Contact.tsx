@@ -26,13 +26,23 @@ const Contact = () => {
               Te Gusta lo que ves ?
             </h4>
           </motion.div>
+
+          <motion.div
+            variants={zoomIn( 0.8, 1)}
+            className="relative flex-1 flex justify-center items-center"
+          >
+          <div className="absolute feedback-gradient z-0"></div>
+          </motion.div>
           <motion.div
             variants={fadeIn("left", "tween", 0.2, 1)}
             className="relative flex-1 flex justify-center items-center"
           >
+            
+
+
             <button
               type="button"
-              className="px-10 flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]"
+              className="z-1 px-10 flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px] hover:scale-110"
             >
               <a
                 href="https://api.whatsapp.com/send?phone=5491127601041"

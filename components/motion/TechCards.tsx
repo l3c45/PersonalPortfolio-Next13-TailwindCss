@@ -6,10 +6,10 @@ import { TypingText } from "./CustomTexts";
 interface Props {
   icon: IconType;
   index: number;
-  color:string;
-  name:string
+  color: string;
+  name: string;
 }
-const TechCards = ({ icon, index,color,name }: Props) => {
+const TechCards = ({ icon, index, color, name }: Props) => {
   return (
     <motion.div
       variants={zoomIn(index * 0.1, 0.5)}
@@ -19,16 +19,13 @@ const TechCards = ({ icon, index,color,name }: Props) => {
       {icon({
         size: 70,
         color,
-        style:{margin:10}
+        style: { margin: 10 },
       })}
-      <TypingText
-      title={name}
-      textStyles="group-hover:text-white text-transparent"
-      />
-      
+      <p className=" select-none group-hover:text-white text-transparent text-xl">
+        {name}
+      </p>
     </motion.div>
   );
 };
 
 export default TechCards;
-

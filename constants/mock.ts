@@ -39,31 +39,31 @@ export const proyects =[
   {
     imgUrl:"/tvgl.png",
     title:"The Game Library",
-    subtitle:"Pagina web que consume una API y muestra los resultados .Posse scroll infinito , pantalla de carga entre paginas.Uso de enrutamineto dinamico y uso de Server Side Rendering. Buscador . Completamente Responsiva ",
+    subtitle:"Pagina web que consume una API y muestra los resultados. Posse scroll infinito , pantalla de carga entre paginas. Uso de enrutamineto dinamico y uso de Server Side Rendering. Buscador. Completamente Responsiva ",
   git:"https://github.com/l3c45/NextJS-Tailwind-GameLibrary",
   demo:"https://next-js-tailwind-game-library.vercel.app/",
-  tech:[3,12]
+  tech:[3,12,19]
   },
   {
     imgUrl:"/monshine.png",
     title:"Monshine App",
-    subtitle:"Aplicacion Movil (Android) para gestion de clientes,ventas e inventario .Creacion de perfiles,generacion de facturas y reportes.Integracion con funciones nativas del SO.Uso de Places Api de Google",
+    subtitle:"Aplicacion Movil (Android) para gestion de clientes,ventas e inventario. Creacion de perfiles, generacion de facturas y reportes. Integracion con funciones nativas del SO. Uso de Places Api de Google",
   git:"https://github.com/No-Country/C8-79-ft-ReactNative",
   demo:"https://github.com/No-Country/C8-79-ft-ReactNative/releases/download/v1.0.0/monshine.apk",
-  tech:[4,8, 5]
+  tech:[4,8, 5,17,18]
   },
   {
     imgUrl:"/coinapp.png",
     title:"CoinApp",
-    subtitle:"Aplicacion Movil (Android) que consume Api Y muestra informacion acerca de las disitntas criptomonedas.Detalle de las ultimas 24hs. Creacion de usuarios para almacenar favoritos.Seccion que permite enviar mensajes entre los usuarios regitrados en la app",
+    subtitle:"Aplicacion Movil (Android) que consume Api y muestra informacion acerca de las disitntas criptomonedas. Detalle de las ultimas 24hs. Creacion de usuarios para almacenar favoritos. Seccion que permite enviar mensajes entre los usuarios regitrados en la app.",
   git:"https://github.com/l3c45/ReactNative-CoinApp",
   demo:"https://github.com/l3c45/ReactNative-CoinApp",
-  tech:[4,8, 5]
+  tech:[4,8, 5,19]
   },
   {
     imgUrl:"/ardruino.jpg",
-    title:"Coin App",
-    subtitle:"Dispositivo que mide los niveles de potencia y tension del suministro electrico del hogas . Panel de administraciony envio remoto de datos",
+    title:"PowerMetter",
+    subtitle:"Dispositivo que mide los niveles de potencia y tension del suministro electrico del hogar. Panel de administracion y envio  de datos.",
   git:"./",
   demo:"./",
   tech:[10,2, 6]
@@ -79,18 +79,18 @@ export const proyects =[
   {
     imgUrl:"/tareas.png",
     title:"TASKS App",
-    subtitle:"SPA construida con React .Permite crear, eliminar y alternar estado de tarea.Enrutaniento manejado por React Router.Almacena usuarios y tareas en el LocalStorage",
+    subtitle:"SPA construida con React. Permite crear, eliminar y alternar estado de tarea. Enrutaniento manejado por React Router. Almacena usuarios y tareas en el LocalStorage.",
   git:"https://github.com/l3c45/Alura-Challengue-ONE",
   demo:"https://l3c45.github.io/Alura-Challengue-ONE",
-  tech:[2,11,13]
+  tech:[2,11,13,14,16]
   },
   {
     imgUrl:"/regalos.png",
     title:"Adviency App",
-    subtitle:"SPA construida con React .Consiste en un listado de regalos , al cual se pueden añadir nuevos, eliminar , editar o duplicar los existentes.Almacena la informacion en LocalStorage",
+    subtitle:"SPA construida con React. Consiste en un listado de regalos , al cual se pueden añadir nuevos, eliminar , editar o duplicar los existentes. Almacena la informacion en LocalStorage.",
   git:"https://github.com/l3c45/Adviency-Reto-Gonzalo-Pozzo",
   demo:"https://gleeful-brioche-7b7081.netlify.app/",
-  tech:[2,11]
+  tech:[2,11,16]
   },
   // {
   //   imgUrl:"/timestamp.png",
