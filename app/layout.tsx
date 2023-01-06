@@ -11,7 +11,7 @@ export default function RootLayout({
   return (
     <html>
       <body
-        className={`${exo.className} overflow-x-hidden bg-slate-900 text-white `}
+        className={`container px-4 mx-auto ${exo.className} overflow-x-hidden bg-slate-900 text-white  `}
       >
         {children}
       </body>

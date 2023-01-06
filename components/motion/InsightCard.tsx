@@ -27,7 +27,7 @@ const InsightCard = ({
 }: Props) => (
   <motion.div
     variants={fadeIn("up", "spring", index * 0.5, 1)}
-    className="flex flex-row items-center gap-8 mx-[100px] my-[10px]"
+    className="flex flex-col py-5  sm:py-0 sm:flex-row items-center gap-8 sm:mx-[100px] my-[10px] sm:bg-transparent bg-opacity-40 bg-slate-800 px-2 sm:p-0 shadow-lg"
   >
     <Image
       src={imgUrl}
@@ -37,17 +37,17 @@ const InsightCard = ({
       className=" h-auto w-auto "
     />
 
-    <div className="w-full flex justify-between items-center gap-4">
+    <div className=" flex sm:flex-row flex-col justify-between items-center gap-4">
       <div className="flex-1  flex flex-col max-w-[650px]">
-        <h4 className="font-normal lg:text-[42px] text-[26px] text-white">
+        <h4 className="font-normal md:text-[42px] text-[20px] text-white">
           {title}
         </h4>
-        <p className="mt-[16px] font-normal text-justify lg:text-[20px] text-[14px] text-secondary-white">
+        <p className="mt-[16px] font-normal text-justify md:text-[20px] text-[16px] text-secondary-white">
           {subtitle}
         </p>
 
-        <div className="flex items-center justify-between">
-          <ul className="py-6 flex gap-4 ">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+          <ul className="py-6 flex justify-center flex-wrap gap-4 ">
             {tech.map((item, i) => {
               const icon = techsObj[item];
 
@@ -63,7 +63,7 @@ const InsightCard = ({
             })}
           </ul>
 
-          <div className="flex gap-6 ">
+          <div className="flex justify-center gap-6 ">
             <a href={git} rel="noreferrer" target={"_blank"} className=" my-4">
               <BsGithub className="text-4xl hover:text-zinc-800 hover:scale-110"></BsGithub>
             </a>

@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { footerVariants } from "../utils/motion";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
+
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
       variants={footerVariants}
       initial="hidden"
       whileInView="show"
-      className={`  relative`}
+      className={` relative `}
     >
       <div className="footer-gradient" />
 

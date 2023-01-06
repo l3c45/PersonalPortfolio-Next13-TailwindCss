@@ -21,7 +21,7 @@ const TechCards = ({ icon, index, color, name }: Props) => {
         color,
         style: { margin: 10 },
       })}
-      <p className=" select-none group-hover:text-white text-transparent text-xl">
+      <p className=" select-none group-hover:text-white sm:text-transparent text-xl">
         {name}
       </p>
     </motion.div>

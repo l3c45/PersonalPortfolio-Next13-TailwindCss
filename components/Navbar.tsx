@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { navVariants } from "../utils/motion";
 
 const Navbar = () => {
@@ -10,13 +9,12 @@ const Navbar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className={`sm:px-16 px-6 py-8 relative`}
+      className={` py-8 relative hidden sm:block  w-full mx-auto `}
     >
-      <div className=" absolute w-[100%] inset-0 gradient-01" />
-      <nav className=" z-10 relative 2xl:max-w-[1280px] w-full mx-auto flex justify-center gap-8  ">
-        {/* //"py-5 flex fixed w-full mx-auto  justify-center   "> */}
-        {/* <Image className="h-8 w-20" width={500} height={500}  alt={"Logo"} src={"/logo.png"}></Image> */}
-        <ul className="flex gap-5 ">
+
+<div className=" absolute w-[100%] inset-0 gradient-nav z-0" />
+
+        <ul className="flex justify-center gap-5 z-1 relative ">
           <li className="text-2xl hover:text-slate-400">
             <a href="#about">Acerca</a>
           </li>
@@ -33,7 +31,7 @@ const Navbar = () => {
             <a href="#contact">Contacto</a>
           </li>
         </ul>
-      </nav>
+
       </motion.nav>
     
   );

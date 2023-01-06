@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen flex  justify-center items-center "
+      className="h-screen flex  justify-center items-center "
     >
       <motion.div
         variants={staggerContainer()}
@@ -17,12 +17,12 @@ const Contact = () => {
         viewport={{ once: false, amount: 0.25 }}
         // className={` mx-auto flex lg:flex-row flex-col gap-6`}
       >
-        <div className="flex items-center justify-between flex-wrap gap-10">
+        <div className="flex flex-col sm:flex-row items-center justify-between flex-wrap gap-10">
           <motion.div
             variants={fadeIn("right", "tween", 0.2, 1)}
             className="  flex justify-end flex-col gradient-05 sm:p-8 p-4 relative"
           >
-            <h4 className="font-bold md:text-[64px] text-[44px] text-white px-10">
+            <h4 className="font-bold  text-[44px] text-white sm:px-10">
               Te Gusta lo que ves ?
             </h4>
           </motion.div>
@@ -31,7 +31,7 @@ const Contact = () => {
             variants={zoomIn( 0.8, 1)}
             className="relative flex-1 flex justify-center items-center"
           >
-          <div className="absolute feedback-gradient z-0"></div>
+          <div className="absolute left-[77%]   feedback-gradient z-0"></div>
           </motion.div>
           <motion.div
             variants={fadeIn("left", "tween", 0.2, 1)}

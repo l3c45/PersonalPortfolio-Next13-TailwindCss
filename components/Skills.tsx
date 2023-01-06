@@ -7,23 +7,24 @@ import TechCards from "./motion/TechCards";
 
 const Skills = () => {
   return (
+    <section
+        id="skills"
+        className="min-h-screen flex items-center "
+      >
     <motion.div
       variants={staggerContainer()}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={` flex flex-col`}
+     className={"min-h-screen flex flex-col justify-evenly items-center"}
     >
-      <section
-        id="skills"
-        className="min-h-screen flex flex-col justify-evenly items-center "
-      >
+      
         <TypingText
           title={"Tecnologias"}
-          textStyles="text-5xl  text-center"
+          textStyles=" text-3xl sm:text-5xl  text-center pb-10"
         />
 
-        <div className="  flex flex-wrap gap-10 justify-center mx-[200px]">
+        <div className="  flex flex-wrap gap-10 justify-center sm:mx-[200px]">
           {Object.keys(techsObj).map((_, i) => {
             const icon = techsObj[i];
             return icon ? (
@@ -37,8 +38,9 @@ const Skills = () => {
             ) : null;
           })}
         </div>
-      </section>
+     
     </motion.div>
+    </section>
   );
 };
 

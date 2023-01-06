@@ -2,7 +2,8 @@ export default function Head() {
   return (
     <>
       <title>Lucas Zarate</title>
-      <meta content="width=device-width, initial-scale=1" name="viewport" />
+      <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1" />
+
       <link
         rel="apple-touch-icon"
         sizes="180x180"

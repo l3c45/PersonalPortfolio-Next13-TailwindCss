@@ -9,16 +9,13 @@ const Proyects = () => {
   return (
     <section
       id="proyects"
-      // className="mb-[100px] pb-[100px]"
-      
     >
       <motion.div
         variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
-      
-        viewport={{ once: false, amount: 0.25 }}
-       
+        viewport={{ once: true, amount: 0.01 }}
+       className={"flex flex-col items-center"}
       >
         <TitleText title={"Proyectos"} textStyles="text-center" />
         <div className="mt-[50px] flex flex-col gap-8]">
@@ -26,8 +23,8 @@ const Proyects = () => {
             <InsightCard key={`insight-${index}`} {...item} index={index + 1} />
           ))}
         </div>
-        {/* <motion.div
-          variants={fadeIn("up", "spring", 5, 1)}
+        <motion.div
+          variants={fadeIn("up", "spring", 4, 1)}
           className=" my-[100px]"
         >
           <button
@@ -43,7 +40,7 @@ const Proyects = () => {
              Mas Proyectos
             </a>
           </button>
-        </motion.div> */}
+        </motion.div>
       </motion.div>
     </section>
   );

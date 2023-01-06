@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-.gradient-01 {
+.gradient-nav {
     background-image: linear-gradient(
       270deg,
       hsl(295deg 76% 51%) 0%,
@@ -45,7 +45,7 @@
  
   width: 200px;
   height: 316px;
- left:77%;
+
 
   background: #8d39a3;
   filter: blur(175px);
