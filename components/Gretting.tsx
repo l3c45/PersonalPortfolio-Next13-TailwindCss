@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 import { fadeIn, slideIn, staggerContainer, textVariant } from "../utils/motion";
 
 const Gretting = () => {
+
+
+  
 let variant
 let isMobile
 
@@ -21,7 +24,7 @@ let isMobile
   return (
     <section
       id="gretting"
-      className="h-screen flex flex-col justify-center items-center "
+      className="relative h-screen flex flex-col justify-center items-center "
     >
       <motion.div
         variants={staggerContainer()}
@@ -40,7 +43,7 @@ let isMobile
 
         <motion.div
           variants={variant}
-          className="py-10 flex flex-row justify-center items-center relative w-full md:-mt-[20px] -mt-[12px]"
+          className="py-10 flex  justify-center items-center  "//md:-mt-[20px] -mt-[12px]
         >
           <h2 className="text-slate-500 text-4xl sm:text-6xl py-3 text-center">
             Desarrollador FrontEnd

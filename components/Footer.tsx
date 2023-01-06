@@ -5,10 +5,28 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 
 const Footer = () => {
+
+  let variant
+let isMobile
+
+  if (typeof window !== 'undefined') {
+     isMobile = window.outerWidth <640
+  }
+
+  if (isMobile) {
+     variant={show: {
+      opacity: 1,
+      y: 0,
+    }}
+    
+  }else{
+    variant=footerVariants
+  }
+
   return (
     <motion.footer
       id="contact"
-      variants={footerVariants}
+      variants={variant}
       initial="hidden"
       whileInView="show"
       className={` relative `}

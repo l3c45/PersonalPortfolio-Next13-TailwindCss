@@ -13,11 +13,11 @@ import "../styles/globals.css";
 
 const Home = () => {
   return (
-    <main>
+    <main className=" overflow-hidden    text-white">
       <Navbar></Navbar>
       <Gretting></Gretting>
-      <About></About>
-      {/* <Experiencie></Experiencie> */}
+      <About></About> 
+       {/* <Experiencie></Experiencie> */}
       <Proyects></Proyects>
       <Skills></Skills>
       <Contact></Contact>

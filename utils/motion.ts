@@ -115,7 +115,7 @@ export const fadeIn = (direction:string, type:string, delay:time, duration:time)
 
 export const sideCome = (direction:string) => ({
   hidden: {
-    x: direction === 'left' ? '-190%' : '100%',
+    x: direction === 'left' ? '-100%' : '100%',
     rotate: 270,
   },
   show: {
@@ -161,7 +161,7 @@ export const footerVariants = {
     y: 0,
     transition: {
       type: 'spring',
-      stiffness: 300,
+      stiffness: 80,
       delay: 0.5,
     },
   },
