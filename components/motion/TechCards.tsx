@@ -8,12 +8,21 @@ interface Props {
   index: number;
   color: string;
   name: string;
+  mobile:boolean
 }
-const TechCards = ({ icon, index, color, name }: Props) => {
+const TechCards = ({ icon, index, color, name,mobile }: Props) => {
+  let variant={show: {
+    scale: 1,
+    opacity: 1,}}
+
+  if (!mobile) {
+    variant=zoomIn(index * 0.1, 0.5)
+ }
+
+  
   return (
     <motion.div
-      variants={zoomIn(index * 0.1, 0.5)}
-      // {fadeIn("up", "spring", index*0.1, 1)}
+      variants={variant}
       className="group flex  flex-col items-center gap-4"
     >
       {icon({

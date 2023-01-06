@@ -1,11 +1,21 @@
 "use client";
 import { motion } from "framer-motion";
 import { techsObj } from "../constants/Icons";
-import { fadeIn, staggerContainer } from "../utils/motion";
+import { fadeIn, staggerContainer, zoomIn } from "../utils/motion";
 import { TypingText } from "./motion/CustomTexts";
 import TechCards from "./motion/TechCards";
 
 const Skills = () => {
+
+
+  let isMobile=false
+
+  if (typeof window !== 'undefined') {
+     isMobile = window.outerWidth <640
+  }
+
+ 
+
   return (
     <section
         id="skills"
@@ -33,6 +43,7 @@ const Skills = () => {
                 name={icon.name}
                 icon={icon.icon}
                 color={icon.color}
+                mobile={isMobile}
                 key={i}
               />
             ) : null;

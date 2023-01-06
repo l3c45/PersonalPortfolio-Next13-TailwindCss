@@ -6,6 +6,20 @@ import { TypingText } from "../components";
 import { staggerContainer, sideCome, fadeIn, zoomIn } from "../utils/motion";
 
 const About = () => {
+  let variant
+  let isMobile
+  
+    if (typeof window !== 'undefined') {
+       isMobile = window.outerWidth <640
+    }
+  
+    if (isMobile) {
+       variant=zoomIn( 0.5, 0.8)
+      
+    }else{
+      variant=fadeIn("left", "tween", 0.2, 1)
+    }
+    
   return (
     <section
       id="about"
@@ -41,7 +55,7 @@ const About = () => {
 
           <motion.div
        
-             variants={fadeIn("left", "tween", 0.2, 1)}
+             variants={variant}
             className="sm:flex-1"
           >
             <p className="sm:first-letter:text-3xl sm:text-2xl text-justify sm:indent-8 text-xl first-letter:text-2xl indent-6 ">

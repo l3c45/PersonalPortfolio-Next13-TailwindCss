@@ -1,8 +1,23 @@
 "use client";
 import { motion } from "framer-motion";
-import { slideIn, staggerContainer, textVariant } from "../utils/motion";
+import { useEffect, useState } from "react";
+import { fadeIn, slideIn, staggerContainer, textVariant } from "../utils/motion";
 
 const Gretting = () => {
+let variant
+let isMobile
+
+  if (typeof window !== 'undefined') {
+     isMobile = window.outerWidth <640
+  }
+
+  if (isMobile) {
+     variant=fadeIn("up", "spring", 0.5, 0.8)
+    
+  }else{
+    variant=slideIn("right", "tween", 0.5, 1)
+  }
+
   return (
     <section
       id="gretting"
@@ -24,7 +39,7 @@ const Gretting = () => {
         </motion.div>
 
         <motion.div
-          variants={slideIn("right", "tween", 0.7, 1)}
+          variants={variant}
           className="py-10 flex flex-row justify-center items-center relative w-full md:-mt-[20px] -mt-[12px]"
         >
           <h2 className="text-slate-500 text-4xl sm:text-6xl py-3 text-center">
