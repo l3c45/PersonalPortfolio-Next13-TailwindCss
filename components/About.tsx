@@ -50,14 +50,14 @@ const About = () => {
               tecnologías .
             </p>
             <p className="sm:first-letter:text-3xl sm:text-2xl text-justify sm:indent-8 text-xl first-letter:text-2xl indent-6">
-              Ademas soy Tecnico Electromecanico especializado en la
-              automatizacion industrial , lo cual a lo largo de estos 5 años me
-              permitio desarrolar un pensamiento analítico, la resolución
+            Además soy Tecnico Electromecánico especializado en la
+              Automatización industrial , lo cual a lo largo de estos 5 años me
+              permitió desarrollar un pensamiento analítico, la resolución
               efectiva de problemas y el trabajo en equipo.
             </p>
             <p className="sm:first-letter:text-3xl sm:text-2xl text-justify sm:indent-8 text-xl first-letter:text-2xl indent-6">
         
-              Actualmente me encuentro en Buenos Aires , Argentina
+              Actualmente , me encuentro en Buenos Aires , Argentina
             </p>
           </motion.div>
         </div>

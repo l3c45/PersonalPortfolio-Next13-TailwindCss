@@ -41,7 +41,7 @@ export const slideIn = (direction:string, type:string, delay:time, duration:time
 type time =number
 
 
-export const staggerContainer = (staggerChildren=0, delayChildren=0)=> (console.log("run stagger"),{
+export const staggerContainer = (staggerChildren=0, delayChildren=0)=> ({
   hidden: {},
   show: {
     transition: {
