@@ -14,7 +14,7 @@ const Proyects = () => {
         variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.01 }}
+        viewport={{ once: false, amount: 0.15 }}
        className={"flex flex-col items-center"}
       >
         <TitleText title={"Proyectos"} textStyles="text-center" />

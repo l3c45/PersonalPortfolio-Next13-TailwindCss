@@ -26,7 +26,7 @@ const InsightCard = ({
   tech,
 }: Props) => (
   <motion.div
-    variants={fadeIn("up", "spring", index * 0.5, 1)}
+    variants={fadeIn("up", "spring", index * 0.4, 0.8)}
     className="flex flex-col py-5  sm:py-0 sm:flex-row items-center gap-8 sm:mx-[100px] my-[10px] sm:bg-transparent bg-opacity-40 bg-slate-800 px-2 sm:p-0 shadow-lg"
   >
     <Image

@@ -28,7 +28,8 @@ const About = () => {
           <div className="absolute left-0 gradient-04 z-0"></div>
         </motion.div>
         <div className="flex py-5 items-center">
-          <motion.div variants={sideCome("left")} className="flex-1">
+          <motion.div variants={sideCome("left")} 
+          className="flex-1">
             <Image
               className="w-auto h-auto md:block hidden"
               src={picture}

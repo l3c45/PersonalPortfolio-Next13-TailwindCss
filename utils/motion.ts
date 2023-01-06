@@ -41,7 +41,7 @@ export const slideIn = (direction:string, type:string, delay:time, duration:time
 type time =number
 
 
-export const staggerContainer = (staggerChildren=0.05, delayChildren=1)=> ({
+export const staggerContainer = (staggerChildren=0, delayChildren=0)=> (console.log("run stagger"),{
   hidden: {},
   show: {
     transition: {
@@ -149,10 +149,10 @@ export const zoomIn = (delay:time, duration:time) => ({
 export const footerVariants = {
   hidden: {
     opacity: 0,
-    y: 50,
+    y: -50,
     transition: {
       type: 'spring',
-      stiffness: 10,
+      stiffness: 300,
       damping: 140,
     },
   },
@@ -161,7 +161,7 @@ export const footerVariants = {
     y: 0,
     transition: {
       type: 'spring',
-      stiffness: 10,
+      stiffness: 300,
       delay: 0.5,
     },
   },
