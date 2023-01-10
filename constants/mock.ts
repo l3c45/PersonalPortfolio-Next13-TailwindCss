@@ -71,11 +71,11 @@ export const proyects = [
     title: "PowerMetter",
 
     subtitle:
-      "Dispositivo que mide los niveles de potencia y tensión del suministro eléctrico del hogar. Panel de administración y envio  de datos.",
+      "Medicion de los niveles de potencia y tensión del suministro eléctrico del hogar.Almacenamineto de la informacion en MongoDB.Interfaz web para visualizar los datos.",
 
-    git: "./",
-    demo: "./",
-    tech: [10, 2, 6],
+    git: "https://github.com/l3c45/PowerMetter",
+    demo: "https://merry-puppy-89d7fb.netlify.app/",
+    tech: [1, 2, 6,9,10],
   },
   {
     imgUrl: "/encriptador.png",
