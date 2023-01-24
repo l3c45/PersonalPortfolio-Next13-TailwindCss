@@ -6,6 +6,7 @@ import Image from "next/image";
 import { BsGithub, BsBoxArrowUpRight, BsDiamondFill } from "react-icons/bs";
 import { fadeIn } from "../../utils/motion";
 import { techsObj } from "../../constants/Icons";
+import Link from "next/link";
 interface Props {
   imgUrl: string;
   title: string;
@@ -29,13 +30,15 @@ const InsightCard = ({
     variants={fadeIn("up", "spring", index * 0.4, 0.8)}
     className="flex flex-col py-5  sm:py-0 sm:flex-row items-center gap-8 sm:mx-[100px] my-[10px] sm:bg-transparent bg-opacity-40 bg-slate-800 px-2 sm:p-0 shadow-lg"
   >
-    <Image
-      src={imgUrl}
-      width={350}
-      height={200}
-      alt="image web page"
-      className=" h-auto w-auto "
-    />
+    <Link href={demo}>
+      <Image
+        src={imgUrl}
+        width={350}
+        height={200}
+        alt="image web page"
+        className=" h-auto w-auto "
+      />
+    </Link>
 
     <div className=" flex sm:flex-row flex-col justify-between items-center gap-4">
       <div className="flex-1  flex flex-col max-w-[650px]">
@@ -57,7 +60,7 @@ const InsightCard = ({
                   key={i}
                 >
                   {icon.icon({ color: icon.color, size: 50 })}
-                  <p className="text-sm text-slate-400" >{icon.name}</p>
+                  <p className="text-sm text-slate-400">{icon.name}</p>
                 </li>
               );
             })}
