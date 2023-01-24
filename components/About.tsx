@@ -29,7 +29,7 @@ const About = () => {
         variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
       >
         <TypingText
           title={"Un poco acerca de mi ..."}

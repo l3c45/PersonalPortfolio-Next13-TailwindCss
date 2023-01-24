@@ -36,14 +36,28 @@ export const exp = [
 
 export const proyects = [
   {
-    imgUrl: "/tvgl.png",
-    title: "The Game Library",
+    imgUrl: "/task.png",
+    title: "TASKS Manager",
+
     subtitle:
-      "Página web que consume una API y muestra los resultados. Posee scroll infinito, pantalla de carga entre páginas. Uso de enrutamiento dinámico y uso de Server Side Rendering. Buscador. Completamente Responsiva",
-    git: "https://github.com/l3c45/NextJS-Tailwind-GameLibrary",
-    demo: "https://next-js-tailwind-game-library.vercel.app/",
-    tech: [3, 12, 19],
+      "Aplicacion WEB para gestionar tareas al estilo de Trello.Implementación de Static Generation y Server Side Rendering.Uso de cookies para establecer el tema . Peristencia de datos mediante API que almacena información en MongoDB ",
+
+    git: "https://github.com/l3c45/TaskManager-NextJs-MUI",
+    demo: "https://task-manager-next-js-mui.vercel.app/",
+    tech: [1, 3, 9, 13],
   },
+  {
+    imgUrl: "/ardruino.jpg",
+    title: "PowerMetter",
+
+    subtitle:
+      "Dispositivo que mide los niveles de potencia, tensión del suministro eléctrico y almecena los datos en DB. Web para visualización de registros e informacion en tiempo real .   Implementacion de bot Whatsapp en curso.",
+
+    git: "https://github.com/l3c45/PowerMetter",
+    demo: "https://merry-puppy-89d7fb.netlify.app/",
+    tech: [1, 10, 2, 6],
+  },
+
   {
     imgUrl: "/monshine.png",
     title: "Monshine App",
@@ -67,16 +81,15 @@ export const proyects = [
     tech: [4, 8, 5, 19],
   },
   {
-    imgUrl: "/ardruino.jpg",
-    title: "PowerMetter",
-
+    imgUrl: "/tvgl.png",
+    title: "The Game Library",
     subtitle:
-      "Dispositivo que mide los niveles de potencia y tensión del suministro eléctrico del hogar. Panel de administración y envio  de datos.",
-
-    git: "./",
-    demo: "./",
-    tech: [10, 2, 6],
+      "Página web que consume una API y muestra los resultados. Posee scroll infinito, pantalla de carga entre páginas. Uso de enrutamiento dinámico y uso de Server Side Rendering. Buscador. Completamente Responsiva",
+    git: "https://github.com/l3c45/NextJS-Tailwind-GameLibrary",
+    demo: "https://next-js-tailwind-game-library.vercel.app/",
+    tech: [3, 12, 19],
   },
+
   {
     imgUrl: "/encriptador.png",
     title: "Encriptador de Texto",
@@ -88,17 +101,7 @@ export const proyects = [
     demo: "https://l3c45.github.io/Alura-Challengue-ONE",
     tech: [0, 11],
   },
-  {
-    imgUrl: "/tareas.png",
-    title: "TASKS App",
 
-    subtitle:
-      "SPA construida con React. Permite crear, eliminar y alternar estado de tarea. Enrutamiento manejado por React Router. Almacena usuarios y tareas en el LocalStorage.",
-
-    git: "https://github.com/l3c45/React-TASKS",
-    demo: "https://astounding-cascaron-949ce2.netlify.app/",
-    tech: [2, 11, 13, 14, 16],
-  },
   {
     imgUrl: "/regalos.png",
     title: "Adviency App",
