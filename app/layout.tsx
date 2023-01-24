@@ -11,7 +11,7 @@ export default function RootLayout({
   return (
     <html>
       <body
-        className={` ${exo.className} container mx-auto px-4  bg-slate-900   `}
+        className={` ${exo.className}   bg-slate-900   `}
       >
         {children}
       </body>

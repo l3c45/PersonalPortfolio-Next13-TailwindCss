@@ -15,6 +15,7 @@ const Home = () => {
   return (
     <main className=" overflow-hidden    text-white">
       <Navbar></Navbar>
+      <div className="container mx-auto px-4">
       <Gretting></Gretting>
       <About></About> 
        {/* <Experiencie></Experiencie> */}
@@ -22,6 +23,7 @@ const Home = () => {
       <Skills></Skills>
       <Contact></Contact>
       <Footer></Footer>
+      </div>
     </main>
   );
 };
