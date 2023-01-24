@@ -59,7 +59,7 @@ const Contact = () => {
               className="z-1 px-10 flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px] hover:scale-110"
             >
               <a
-                href="https://api.whatsapp.com/send?phone=5491127601041"
+                href="mailto:mrlucaszarate@gmail.com"
                 rel="noreferrer"
                 target={"_blank"}
                 className="font-normal text-2xl text-white"
